@@ -95,19 +95,61 @@ ret
 
  
 ## Subtraction   of 8 bit numbers  ALP 
+```
+org 100h
+
+mov ax,2A34h     ; AX = 2A34h
+mov [0200h],ax   ; Store AX into memory[0200h]
+
+mov bx,1CF7h     ; BX = 1CF7h
+sub ax,[0200h]   ; AX = AX - [0200h]
+
+ret
+```
 
 ## Output  
+<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/e0589b12-c988-41ab-9429-878078cc7611" />
+
+
 ## Multiplication alp 
- ## Output  
+```
+org 100h
+
+mov ax,1234h      ; AX = 1234h
+mov [0200h],ax    ; store value at memory[0200h]
+
+mov si,0200h      ; SI points to 0200h
+mov ax,0002h      ; AX = 0002h
+mov bx,[si]       ; BX = [0200h] = 1234h
+mul bx            ; DX:AX = AX * BX (0002h * 1234h)
+
+ret
+
+```
+
+## Output  
+<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/479ebb00-da28-49d1-a283-7b45bfc5a4ac" />
 
 
 ## Division alp 
+```
+org 100h
 
+mov ax,1234h     ; AX = 1234h (dividend)
+mov bx,0002h     ; BX = 0002h (divisor)
+div bx           ; unsigned division: AX ÷ BX → quotient in AX, remainder in DX
+
+ret
+
+```
 ## Output  
+<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/0f5404c4-654d-41a6-9283-7e605d6e273d" />
+
 
 
 ## Result :
- 
+
+The execution of ALP on fundamental arithmetic operations is successfully completed.
 
 
 
