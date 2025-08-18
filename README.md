@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+## Name : GANESH D
+## Roll no: 212223240035
+## Date of experiment : 18/07/2025
 
 
 
