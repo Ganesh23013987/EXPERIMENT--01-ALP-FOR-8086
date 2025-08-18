@@ -91,7 +91,8 @@ ret
 
 
 ## Output  
-<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/a6a5c371-5667-4c44-9ae7-9ff4487ba47d" />
+<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/46605045-736a-439e-bf8f-903ca78f918f" />
+
  
 ## Subtraction   of 8 bit numbers  ALP 
 
