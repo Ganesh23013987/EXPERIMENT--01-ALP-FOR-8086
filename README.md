@@ -1,5 +1,5 @@
 # EXPERIMENT--01-ALP-FOR-8086
-#### Name : GANESH D
+### Name : GANESH D
 
 ### Roll no: 212223240035
 
@@ -91,7 +91,7 @@ ret
 
 
 ## Output  
-<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/46605045-736a-439e-bf8f-903ca78f918f" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/46605045-736a-439e-bf8f-903ca78f918f" />
 
  
 ## Subtraction   of 8 bit numbers  ALP 
@@ -108,7 +108,7 @@ ret
 ```
 
 ## Output  
-<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/e0589b12-c988-41ab-9429-878078cc7611" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/e0589b12-c988-41ab-9429-878078cc7611" />
 
 
 ## Multiplication alp 
@@ -128,7 +128,7 @@ ret
 ```
 
 ## Output  
-<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/479ebb00-da28-49d1-a283-7b45bfc5a4ac" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/479ebb00-da28-49d1-a283-7b45bfc5a4ac" />
 
 
 ## Division alp 
@@ -143,7 +143,7 @@ ret
 
 ```
 ## Output  
-<img width="850" height="850" alt="image" src="https://github.com/user-attachments/assets/0f5404c4-654d-41a6-9283-7e605d6e273d" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/0f5404c4-654d-41a6-9283-7e605d6e273d" />
 
 
 
