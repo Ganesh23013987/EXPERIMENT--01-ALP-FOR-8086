@@ -81,8 +81,8 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ```
 org 100
 
-mov ax, 3521h     ; AX ? 3521h  (immediate)
-add ax, 4612h     ; AX ? AX + 4612h (immediate)
+mov ax, 3521h     
+add ax, 4612h    
 
 ret
     
@@ -91,7 +91,8 @@ ret
 
 
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/5654c0a1-06ff-4e82-b043-e3db07df5229" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/a22ef266-8acb-4da6-bc70-93ffdff37176" />
+
 
 
  
@@ -99,16 +100,17 @@ ret
 ```
 org 100h
 
-mov ax, 2561h   ; AX = 2561h
-mov bx, 00F0h   ; BX = 00F0h
-sub ax, bx      ; AX = AX - BX
+mov ax, 2561h   
+mov bx, 00F0h   
+sub ax, bx      
 
-hlt             ; stop execution
+ret           
 
 ```
 
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/21f90aea-e48c-4286-9f1a-a10d8f965fed" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/08407d4e-05e5-4713-bf2b-db4549365800" />
+
 
 
 ## Multiplication 16 bit alp (Direct memory mode)
@@ -149,15 +151,16 @@ ret
 ```
 org 100h
 
-mov ax, 2345h   ; AX = 2345h
-mov bx, 1111h   ; BX = 1111h
-and ax, bx      ; AX = AX AND BX
+mov ax, 2345h   
+mov bx, 1111h 
+and ax, bx      
 
 ret
 ```
 
 ## Output
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/043047b0-49f7-4a4f-812e-cbada6b09440" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/c2cb95c4-a15c-46d2-b0e1-25b89656eca5" />
+
 
 ## OR 16 bit Operation(Register mode)
 ```
