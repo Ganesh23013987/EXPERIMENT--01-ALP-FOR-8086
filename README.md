@@ -1,4 +1,4 @@
-# EXPERIMENT--01-ALP-FOR-8086
+<img width="692" height="471" alt="image" src="https://github.com/user-attachments/assets/60c9a368-c984-4942-bdf1-f909a4630d98" /># EXPERIMENT--01-ALP-FOR-8086
 ### Name : GANESH D
 
 ### Roll no: 212223240035
@@ -79,7 +79,7 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition of 16 bit ALP (Immediate mode)
 ```
 org 100
 
@@ -97,7 +97,7 @@ ret
 
 
  
-## Subtraction   of 8 bit numbers  ALP 
+## Subtraction of 16 bit numbers  ALP (Register mode)
 ```
 org 100h
 
@@ -113,43 +113,82 @@ hlt             ; stop execution
 <img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/21f90aea-e48c-4286-9f1a-a10d8f965fed" />
 
 
-## Multiplication alp 
+## Multiplication 16 bit alp (Direct memory mode)
 ```
-org 100h
+org 100
 
-mov ax,1234h      ; AX = 1234h
-mov [0200h],ax    ; store value at memory[0200h]
+NUM DW 3421h
 
-mov si,0200h      ; SI points to 0200h
-mov ax,0002h      ; AX = 0002h
-mov bx,[si]       ; BX = [0200h] = 1234h
-mul bx            ; DX:AX = AX * BX (0002h * 1234h)
+MOV AX, 5D89h
 
-ret
+MUL NUM       
+ret  
 
 ```
 
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/479ebb00-da28-49d1-a283-7b45bfc5a4ac" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/68dffd80-8e29-49c8-81df-c64843355716" />
 
 
-## Division alp 
+
+## Division 16 bit alp (Register indirect mode)
+```
+NUM DW 6D87h    
+
+MOV BX, OFFSET NUM
+MOV AX, 3521h
+
+DIV WORD PTR [BX]
+ret  
+```
+## Output  
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/02084a17-bbe3-4f50-84ae-8be8e75f3165" />
+
+## Programs for Logical  operations
+
+## AND 16 bit opeartion(Register mode)
+
 ```
 org 100h
 
-mov ax,5721h     ; AX = 5721h (dividend)
-mov bx,0002h     ; BX = 0002h (divisor)
-div bx           ; unsigned division: AX ÷ BX → quotient in AX, remainder in DX
+mov ax, 2345h   ; AX = 2345h
+mov bx, 1111h   ; BX = 1111h
+and ax, bx      ; AX = AX AND BX
 
 ret
+```
+
+## Output
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/043047b0-49f7-4a4f-812e-cbada6b09440" />
+
+## OR 16 bit operation(Register mode)
+```
+org 100
+
+mov ax,4d69h
+mov bx,3521h
+
+OR ax,bx
+ret
+```
+## Output
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/a611590d-80bc-4405-a57d-979bcf4f03fe" />
+
+## NOT 16 bit Operation(Register mode)
 
 ```
-## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/8cd64c46-144d-42ad-b9c2-6dfa7c10e178" />
+org 100
+mov ax,6d79h
 
+NOT ax
+ret                 
 
+```
 
+## Output
+<img width="691" height="472" alt="image" src="https://github.com/user-attachments/assets/c1efe02e-2410-4561-b3b8-b2095d151cdc" />
 
+## XOR 16 bit Operation(Register mode)
 ## Result :
 
 The execution of ALP on fundamental arithmetic operations is successfully completed.
