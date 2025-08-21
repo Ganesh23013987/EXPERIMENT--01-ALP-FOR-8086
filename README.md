@@ -81,34 +81,36 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
-mov ax,1234h       
-mov bx,4321h
+org 100
 
-add ax,bx
-ret       
+mov ax, 3521h     ; AX ? 3521h  (immediate)
+add ax, 4612h     ; AX ? AX + 4612h (immediate)
+
+ret
+    
 ```
 
 
 
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/46605045-736a-439e-bf8f-903ca78f918f" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/5654c0a1-06ff-4e82-b043-e3db07df5229" />
+
 
  
 ## Subtraction   of 8 bit numbers  ALP 
 ```
 org 100h
 
-mov ax,2A34h     ; AX = 2A34h
-mov [0200h],ax   ; Store AX into memory[0200h]
+mov ax, 2561h   ; AX = 2561h
+mov bx, 00F0h   ; BX = 00F0h
+sub ax, bx      ; AX = AX - BX
 
-mov bx,1CF7h     ; BX = 1CF7h
-sub ax,[0200h]   ; AX = AX - [0200h]
+hlt             ; stop execution
 
-ret
 ```
 
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/e0589b12-c988-41ab-9429-878078cc7611" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/21f90aea-e48c-4286-9f1a-a10d8f965fed" />
 
 
 ## Multiplication alp 
@@ -135,7 +137,7 @@ ret
 ```
 org 100h
 
-mov ax,1234h     ; AX = 1234h (dividend)
+mov ax,5721h     ; AX = 5721h (dividend)
 mov bx,0002h     ; BX = 0002h (divisor)
 div bx           ; unsigned division: AX ÷ BX → quotient in AX, remainder in DX
 
@@ -143,7 +145,8 @@ ret
 
 ```
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/0f5404c4-654d-41a6-9283-7e605d6e273d" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/8cd64c46-144d-42ad-b9c2-6dfa7c10e178" />
+
 
 
 
