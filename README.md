@@ -1,4 +1,4 @@
-<img width="692" height="471" alt="image" src="https://github.com/user-attachments/assets/60c9a368-c984-4942-bdf1-f909a4630d98" /># EXPERIMENT--01-ALP-FOR-8086
+
 ### Name : GANESH D
 
 ### Roll no: 212223240035
@@ -146,7 +146,7 @@ ret
 
 ## Programs for Logical  operations
 
-## AND 16 bit opeartion(Register mode)
+## AND 16 bit Opeartion(Register mode)
 
 ```
 org 100h
@@ -161,7 +161,7 @@ ret
 ## Output
 <img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/043047b0-49f7-4a4f-812e-cbada6b09440" />
 
-## OR 16 bit operation(Register mode)
+## OR 16 bit Operation(Register mode)
 ```
 org 100
 
@@ -186,9 +186,24 @@ ret
 ```
 
 ## Output
-<img width="691" height="472" alt="image" src="https://github.com/user-attachments/assets/c1efe02e-2410-4561-b3b8-b2095d151cdc" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/c1efe02e-2410-4561-b3b8-b2095d151cdc" />
 
 ## XOR 16 bit Operation(Register mode)
+
+```
+org 100h
+
+mov ax,6d89h
+mov bx,2421h 
+
+XOR ax,bx
+
+ret
+```
+
+## Output
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/1804daaf-f422-4ef1-ae2d-be85a29e56c8" />
+
 ## Result :
 
 The execution of ALP on fundamental arithmetic operations is successfully completed.
