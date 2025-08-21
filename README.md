@@ -3,11 +3,9 @@
 
 ### Roll no: 212223240035
 
-### Date of experiment : 18/07/2025
+### Date: 18/08/2025
 
-
-
-
+# EXPERIMENT--01-ALP-FOR-8086
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
