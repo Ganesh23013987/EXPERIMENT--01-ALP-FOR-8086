@@ -131,16 +131,15 @@ ret
 
 ## Division 16 bit alp (Register indirect mode)
 ```
-NUM DW 6D87h    
+mov ax,2abch
+mov bx,[1235h]
+div bx
+ret
 
-MOV BX, OFFSET NUM
-MOV AX, 3521h
-
-DIV WORD PTR [BX]
-ret  
 ```
 ## Output  
-<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/02084a17-bbe3-4f50-84ae-8be8e75f3165" />
+<img width="950" height="950" alt="image" src="https://github.com/user-attachments/assets/66580cd8-2ca6-4bf5-a251-c4cee63bc488" />
+
 
 ## Programs for Logical  operations
 
